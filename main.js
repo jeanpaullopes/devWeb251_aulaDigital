@@ -244,13 +244,39 @@ function criarDivUser(usr) {
     p = document.createElement('p');
     p.innerHTML = `Email: ${usr.email}`;
     div.appendChild(p);
+
+    div.appendChild(criarDivAddress(usr.address));
     div.classList.add('card');
-    document.getElementById('cleiton').appendChild(div);
+    return div;
+}
+
+
+function criarDivAddress(addr) {
+    const div = document.createElement('div');
+    let p = document.createElement('p');
+    p.innerHTML = `Rua: ${addr.street}`;
+    div.appendChild(p);
+
+    p = document.createElement('p');
+    p.innerHTML = `No.: ${addr.suite}`;
+    div.appendChild(p);
+
+    p = document.createElement('p');
+    p.innerHTML = `Cidade: ${addr.city}`;
+    div.appendChild(p);
     
-
+    p = document.createElement('p');
+    p.innerHTML = `CEP: ${addr.zipcode}`;
+    div.appendChild(p);
+    
+    div.classList.add('card');
+    return div;
 }
-for (let i = 0; i < users.length; i++) {
-    criarDivUser(users[i]);
+
+function criaListaUsers(usrs) {
+    for (let i = 0; i < usrs.length; i++) {
+        document.getElementById('cleiton').appendChild( criarDivUser(users[i]) );
+    }
 }
 
-
+criaListaUsers(users);
