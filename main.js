@@ -244,6 +244,7 @@ function criarDivUser(usr) {
     p = document.createElement('p');
     p.innerHTML = `Email: ${usr.email}`;
     div.appendChild(p);
+    div.classList.add('card');
     document.getElementById('cleiton').appendChild(div);
     
 
