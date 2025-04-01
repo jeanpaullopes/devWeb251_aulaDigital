@@ -19,6 +19,21 @@ function criarDivUser(usr) {
     return div;
 }
 
+function criaCardVeiculoIndexPage(veiculo) {
+    const div = document.createElement('div');
+    let p = document.createElement('p');
+    p.innerHTML = `Modelo: ${veiculo.Modelo}`;
+    div.appendChild(p);
+    p = document.createElement('p');
+    p.innerHTML = `Ano: ${veiculo.Ano}`;
+    div.appendChild(p);
+    const img = document.createElement('img');
+    img.src = veiculo.foto;
+    img.style.width = '180px';
+    div.appendChild(img);
+    return div;
+
+}
 
 function criarDivAddress(addr) {
     const div = document.createElement('div');
@@ -48,10 +63,10 @@ function criaListaUsers(usrs) {
     }
 }
 
-const myRequest = new Request('https://jsonplaceholder.typicode.com/users');
 
 //aqui faz a chamada do recurso URI
-fetch(myRequest)
+//fetch('https://jsonplaceholder.typicode.com/users')
+fetch('http://localhost:3000/pessoas')
 //quando a resposta chegar, o then é chamado
 .then( (response) => {
         if (!response.ok) {
@@ -79,3 +94,32 @@ fetch(myRequest)
 )
 
 criaListaUsers(users);
+
+document.getElementById('cleiton').appendChild (
+    criaCardVeiculoIndexPage(
+        {
+            "id": 1,
+             "Marca": "Cherry",
+             "Modelo" : "Cherry",
+            "Versao": "Tiggo7 Sport",
+            "Ano": 2025,
+            "Quilometragem": 9.145,
+            "Combustível": "Flex",
+            "Motor": 1.5,
+            "Cor": "Cinza",
+            "foto": "https://www.rispoli.com.br/carros/RTZ2D6101.JPG",
+            "Opcionais": [
+              "ABS",
+              "Air bag duplo",
+              "Ar condicionado",
+              "Bancos em couro",
+              "Câmbio automático",
+              "Computador de bordo",
+              "Direção hidráulica",
+              "Rodas de liga",
+              "Travas elétricas",
+              "Vidros elétricos"
+            ]
+          }
+    )
+)

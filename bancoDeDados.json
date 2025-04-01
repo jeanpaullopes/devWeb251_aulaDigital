@@ -1,0 +1,124 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "name": "João",
+      "idade": 30,
+      "email": "Engenheiro",
+      "address": {}
+    },
+    {
+      "id": 2,
+      "name": "Maria",
+      "idade": 25,
+      "email": "Designer",
+      "address": {}
+    },
+    {
+      "id": 3,
+      "name": "Pedro",
+      "idade": 35,
+      "email": "Professor",
+      "address": {}
+      
+    },
+    {
+      "id": 4,
+      "name": "Ana",
+      "idade": 28,
+      "email": "Médica",
+      "address": {}
+    },
+    {
+      "id": "07d5",
+      "name": "Maria 2",
+      "idade": 35,
+      "email": "Designer de interiores",
+      "address": {}
+    }
+  ],
+  "veiculos" :
+  [ {
+    "id": 1,
+     "Marca": "Cherry",
+     "Modelo" : "Cherry",
+    "Versao": "Tiggo7 Sport",
+    "Ano": 2025,
+    "Quilometragem": 9.145,
+    "Combustível": "Flex",
+    "Motor": 1.5,
+    "Cor": "Cinza",
+    "foto": "https://www.rispoli.com.br/carros/RTZ2D6101.JPG",
+    "Opcionais": [
+      "ABS",
+      "Air bag duplo",
+      "Ar condicionado",
+      "Bancos em couro",
+      "Câmbio automático",
+      "Computador de bordo",
+      "Direção hidráulica",
+      "Rodas de liga",
+      "Travas elétricas",
+      "Vidros elétricos"
+    ]
+  },
+    {
+        "id": 2,
+        "Marca": "Fiat",
+        "Modelo": "Punto",
+        "Versao": "Attractive 1.4",
+        "Ano": 2015,
+        "Quilometragem": 45.000,
+        "Combustível": "Gasolina",
+        "Motor": 1.4,
+        "Cor": "Preto",
+        "Opcionais": [
+        "ABS",
+        "Air bag duplo",
+        "Ar condicionado",
+        "Bancos em couro",
+        "Câmbio manual",
+        "Direção hidráulica",
+        "Rodas de liga"
+        ]
+    },
+    {
+        "id": 3,
+        "Marca": "Volkswagen",
+        "Modelo": "Gol",
+        "Versao": "G5",
+        "Ano": 2010,
+        "Quilometragem": 80.000,
+        "Combustível": "Gasolina",
+        "Motor": 1.0,
+        "Cor": "Branco",
+        "Opcionais": [
+            "ABS",
+            "Air bag duplo",
+            "Ar condicionado",
+            "Câmbio manual",
+            "Direção hidráulica"
+        ]
+    },
+    {
+        "id": 4,
+        "Marca": "Chevrolet",
+        "Modelo": "Onix",
+        "Versao": "LT",
+        "Ano": 2018,
+        "Quilometragem": 30.000,
+        "Combustível": "Flex",
+        "Motor": 1.0,
+        "Cor": "Prata",
+        "Opcionais": [
+            "ABS",
+            "Air bag duplo",
+            "Ar condicionado",
+            "Bancos em couro",
+            "Câmbio automático",
+            "Direção elétrica"
+        ]
+    }
+
+  ]
+}
